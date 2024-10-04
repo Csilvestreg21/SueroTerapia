@@ -296,30 +296,67 @@
 	<div id="appointment" class="appointment-main">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<!-- Columna de información -->
+				<div class="col-lg-6">
 					<div class="title-box">
 						<h2>Agendamiento</h2>
 						<p>Recupera tu bienestar con nuestras terapias intravenosas personalizadas.</p>
-						<p>Elige la fecha y hora que mejor se ajuste a tu agenda y déjanos cuidar de tu salud.</p>
-						<h2>¿Por qué reservar una cita con nosotros?</h2>
-						<div class="feature-content">
-							<p>Siempre estamos a tu disposición, sin importar la hora. Ya sea temprano por la mañana o
-								tarde en la noche, nuestros servicios están disponibles cuando más los necesites.</p>
+						<h2>¿Por qué elegirnos para tu cita?</h2>
+					</div>
+					<div class="appointment-benefits">
+						<ul style="list-style-type: disc; padding-left: 20px;">
+							<li><strong>Disponibilidad 24/7:</strong> Siempre estamos a tu servicio, a cualquier hora
+								del día. Ya sea que necesites una sesión temprana o tarde en la noche, nuestros
+								servicios están listos para ti cuando más los requieras.</li>
+							<li><strong>Profesionales Altamente Capacitados:</strong> Nuestro equipo de expertos en
+								terapias intravenosas está comprometido con tu bienestar. Con años de experiencia,
+								garantizamos un servicio de alta calidad y atención personalizada.</li>
+							<li><strong>Transparencia y Tarifas Competitivas:</strong> Ofrecemos precios accesibles y
+								claros, sin costos ocultos. Te aseguramos un servicio de primer nivel a un precio justo,
+								para que cuides de tu salud sin preocupaciones.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Columna de agendamiento -->
+				<div class="col-lg-6">
+					<br>
+					<div class="serviceBox" style="padding: 20px; border: 2px solid #ccc; border-radius: 10px; background-color: #f9f9f9;">
+						<h3 class="title" style="text-align: center; font-weight: bold;">¡Agenda tu cita!</h3>
+						<p class="description" style="text-align: center;">
+							Elige la fecha y hora que mejor se ajuste a tu agenda y déjanos cuidar de tu salud con nuestras terapias intravenosas personalizadas.
+						</p>
+				
+						<!-- Opción de agendar en línea -->
+						<div style="text-align: center; margin-bottom: 20px;">
+							<i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 30px;"></i>
+							<h4 style="font-weight: bold;">Reserva en línea</h4>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLScK1qnY03AKm1zkntoeRlfppVzbuwkVOuhQujwdAUaVTPzdDQ/viewform" 
+							   class="new-btn-d br-2" target="_blank" 
+							   style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+							   Reserva Aquí
+							</a>
 						</div>
-						<div class="feature-content">
-							<p>Nuestro equipo de profesionales tiene una amplia experiencia en terapias intravenosas.
-								Estamos comprometidos con tu bienestar y te brindamos un servicio de alta calidad.</p>
-						</div>
-						<div class="feature-content">
-							<p>Ofrecemos tarifas competitivas y asequibles, sin costos ocultos. Te garantizamos un
-								servicio de primera calidad a un precio justo y accesible.</p>
-						</div>
-						<div class="well-title"></div>
-							<h2>Reservar tu cita</h2>
-							<a href="#" class="new-btn-d br-2">Leer Más</a>
+				
+						<!-- Separador -->
+						<hr style="border: 1px solid #ccc;">
+				
+						<!-- Opción de agendar por WhatsApp -->
+						<div style="text-align: center;">
+							<i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 30px; color: #25D366;"></i>
+							<h4 style="font-weight: bold;">Agenda por WhatsApp</h4>
+							<p class="description">
+								También puedes agendar tu cita fácilmente a través de WhatsApp.
+							</p>
+							<a href="https://wa.me/573102029854?text=Hola%20me%20gustaría%20agendar%20una%20cita%20para%20la%20fecha%20dd/mm/aaaa%20y%20hora%20hh:mm." 
+							   class="new-btn-d br-2" target="_blank" 
+							   style="background-color: #25D366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+							   Agendar por WhatsApp
+							</a>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -332,7 +369,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2>Galleria</h2>
+						<h2>Galería</h2>
 						<p>Nuestros productos</p>
 					</div>
 				</div>
@@ -447,11 +484,8 @@
 						<h2>Contáctenos</h2>
 						<p>
 							Si tienes preguntas o deseas agendar una cita, estamos aquí para ayudarte. Nuestro
-							equipo de
-							atención al cliente está listo para brindarte la información que necesitas y guiarte
-							en cada
-							paso del proceso. ¡No dudes en comunicarte con nosotros para mejorar tu salud y
-							bienestar!
+							equipo de atención al cliente está listo para brindarte la información que necesitas y guiarte
+							en cada paso del proceso. ¡No dudes en comunicarte con nosotros para mejorar tu salud y bienestar!
 						</p>
 					</div>
 				</div>
@@ -463,41 +497,35 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" id="name" name="name"
-											placeholder="Nombre" required data-error="Por favor ingrese su nombre">
+										<input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required data-error="Por favor ingrese su nombre">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="email" placeholder="Email" id="email" class="form-control"
-											name="email" required data-error="Por favor ingrese su email">
+										<input type="email" placeholder="Email" id="email" class="form-control" name="email" required data-error="Por favor ingrese su email">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<input type="tel" placeholder="Número de teléfono" id="number"
-											class="form-control" name="number" required
-											data-error="Por favor ingrese su número">
+										<input type="tel" placeholder="Número de teléfono" id="number" class="form-control" name="number" required data-error="Por favor ingrese su número">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea class="form-control" id="message" placeholder="Tu mensaje" rows="8"
-											data-error="Escribe tu mensaje" required></textarea>
+										<textarea class="form-control" id="message" name="message" placeholder="Tu mensaje" rows="8" data-error="Escribe tu mensaje" required></textarea>
 										<div class="help-block with-errors"></div>
 									</div>
 									<div class="submit-button text-center">
-										<button class="btn btn-common" id="submit" type="submit">Enviar
-											Mensaje</button>
+										<button class="btn btn-common" id="submit" type="submit">Enviar Mensaje</button>
 										<div id="msgSubmit" class="h3 text-center hidden"></div>
 										<div class="clearfix"></div>
 									</div>
 								</div>
 							</div>
-						</form>
+						</form>						
 					</div>
 				</div>
 
@@ -546,8 +574,10 @@
 				<div class="col-lg-12">
 					<div class="subscribe-inner text-center clearfix">
 						<h2>Suscríbete</h2>
-						<p>¡Mantente informado y no te pierdas nuestras últimas noticias y ofertas exclusivas!
-							Al suscribirte, recibirás contenido relevante directamente en tu correo electrónico.
+						<p>¡Mantente informado y no te pierdas nuestras últimas noticias y ofertas
+							exclusivas!
+							Al suscribirte, recibirás contenido relevante directamente en tu correo
+							electrónico.
 						</p>
 						<form action="#" method="post" class="subscribe-form">
 							<div class="form-group">
@@ -571,7 +601,8 @@
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<p class="footer-company-name">
-						&copy; 2024 <a href="https://csilvestreg21.github.io/SueroTerapia/">VitalVit</a>. Todos
+						&copy; 2024 <a href="https://csilvestreg21.github.io/SueroTerapia/">VitalVit</a>.
+						Todos
 						los
 						derechos son reservados.
 					</p>
