@@ -270,7 +270,7 @@ button:focus{
 }
 
 .new-btn-d.br-2{
-	border: 2px solid #ffffff;
+	border: 0px solid #ffffff;
 }
 
 .mail-b{
@@ -280,7 +280,7 @@ button:focus{
 	font-size: 14px;
 	color: #ffffff;
 	padding: 12px 30px;
-	border: 2px solid #ffffff;
+	border: 0px solid #ffffff;
 }
 .mail-b a:hover{
 	color: #00cb86;
@@ -299,7 +299,7 @@ button:focus{
 	display: inline-block;
 	color: #ffffff;
 	padding: 0px 20px;
-	border: 2px solid #ffffff;
+	border: 0px solid #ffffff;
 }
 .right-top ul li a:hover{
 	background: #00cb86;
@@ -1174,7 +1174,21 @@ button:focus{
     .our-team{ margin-bottom: 30px; }
 }
 
+/*------------------------------------------------------------------
+    testimonio
+-------------------------------------------------------------------*/
+.testimonial-box {
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    margin-top: 1px; /* Espaciado superior reducido */
+    font-style: italic; /* Estilo de texto en cursiva */
+}
 
+.testimonial-box p {
+    margin: 0; /* Sin margen */
+}
 
 
 /*------------------------------------------------------------------
