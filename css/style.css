@@ -1311,9 +1311,9 @@ button:focus{
 	text-align: center;
 	line-height: 80px;
 	font-size: 40px;
-	border: 2px dotted #12557f;
+	border: 2px dotted #00cb86;
 	margin-right: 10px;
-	color: #00cb86;
+	color: #333333;
 	border-radius: 50%;
 }
 
@@ -1337,8 +1337,6 @@ button:focus{
 .dit-right a:hover{
 	color: #00cb86;
 }
-
-.contact-block{}
 
 .contact-block .form-group .form-control{
 	background: #00cb86;
@@ -1483,32 +1481,3 @@ select.form-control:not([size]):not([multiple]){
 .subscribe-inner .form-group button:hover {
 	color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
