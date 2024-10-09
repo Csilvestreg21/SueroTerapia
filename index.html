@@ -28,6 +28,8 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
 	<!-- top bar -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- popup -->
 </head>
 
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
@@ -37,8 +39,9 @@
 				<div class="col-lg-6">
 					<div class="left-top">
 						<a class="new-btn-d br-2" href="#appointment"><span>Reservar cita</span></a>
-						<div class="mail-b"><a href="mailto:vitalvit2024@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-						vitalvit2024@gmail.com
+						<div class="mail-b"><a href="mailto:vitalvit2024@gmail.com"><i class="fa fa-envelope-o"
+									aria-hidden="true"></i>
+								vitalvit2024@gmail.com
 							</a></div>
 					</div>
 				</div>
@@ -466,8 +469,7 @@
 											<i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 30px;"></i>
 											<h4 style="font-weight: bold;">Reserva en línea</h4>
 											<a href="https://docs.google.com/forms/d/e/1FAIpQLScK1qnY03AKm1zkntoeRlfppVzbuwkVOuhQujwdAUaVTPzdDQ/viewform"
-												class="new-btn-d br-2" target="_blank"
-												style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+												class="new-btn-d br-3" target="_blank">
 												Reserva Aquí
 											</a>
 										</div>
@@ -484,8 +486,7 @@
 												También puedes agendar tu cita fácilmente a través de WhatsApp.
 											</p>
 											<a href="https://wa.me/573102029854?text=Hola%20me%20gustaría%20agendar%20una%20cita%20para%20la%20fecha%20dd/mm/aaaa%20y%20hora%20hh:mm."
-												class="new-btn-d br-2" target="_blank"
-												style="background-color: #25D366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+												class="new-btn-d br-4" target="_blank">
 												Agendar por WhatsApp
 											</a>
 										</div>
@@ -547,25 +548,46 @@
 					<div class="subscribe-inner text-center clearfix">
 						<h2>Suscríbete</h2>
 						<p>¡Mantente informado y no te pierdas nuestras últimas noticias y ofertas
-							exclusivas!
-							Al suscribirte, recibirás contenido relevante directamente en tu correo
+							exclusivas! Al suscribirte, recibirás contenido relevante directamente en tu correo
 							electrónico.
 						</p>
-						<form action="#" method="post" class="subscribe-form">
-							<div class="form-group">
-								<input class="form-control-1" id="email-1" name="email"
-									placeholder="Dirección de correo electrónico" required type="email">
+						<div class="form-group">
+							<button id="contactBtn" class="new-btn-d br-3">Contáctenos</button>
+						</div>
+						<div id="contactModal" class="modal">
+							<div class="modal-content">
+								<span id="close-modal" class="close">&times;</span>
+								<h2 style="color: #000; text-align: center; font-size: 24px; margin-bottom: 20px;">Contáctenos</h2>
+								<form id='contact-form'>
+									<input type='hidden' name='form-name' value='contact-form' />
+									<div>
+										<input type="text" name="name" placeholder="Nombre *" required>
+									</div>
+									<div>
+										<input type="email" name="email" placeholder="Email *" required>
+									</div>
+									<div>
+										<input type="text" name="telefono" placeholder="Telefono *" required>
+									</div>
+									<div>
+										<input type="text" name="whatsApp" placeholder="WhatsApp *" required>
+									</div>
+									<div>
+										<textarea name="message" placeholder="Escribe tu mensaje" required></textarea>
+									</div>
+									<button type="submit" id="submit-button">Enviar mensaje</button>
+								</form>
+								<div id="success-message" style="display: none; color: green;">¡Mensaje enviado
+									correctamente!</div>
+								<div id="error-message" style="display: none; color: red;">Hubo un error al
+									enviar el mensaje. Inténtalo de nuevo.</div>
 							</div>
-							<div class="form-group">
-								<button type="submit" class="new-btn-d br-2">Suscríbete</button>
-							</div>
-						</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- End Subscribe -->
 
 	<!-- Start Footer -->
 	<footer class="footer-box">
@@ -588,7 +610,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<!-- ALL PLUGINS -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.pogo-slider.min.js"></script>
 	<script src="js/slider-index.js"></script>
@@ -601,6 +622,62 @@
 	<script src="js/isotope.min.js"></script>
 	<script src="js/images-loded.min.js"></script>
 	<script src="js/custom.js"></script>
-</body>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+	<script>
+		(function () {
+			emailjs.init("xcjKxWWSR2vdnhmnX"); // Reemplaza con tu Public Key
+		})();
+		// Abrir el modal
+		document.getElementById('contactBtn').onclick = function () {
+			document.getElementById('contactModal').style.display = "block";
+			document.body.classList.add('modal-open'); // Desactivar el scroll y aplicar desenfoque
+		}
+
+		// Cerrar el modal y restaurar el fondo
+		document.getElementById('close-modal').onclick = function () {
+			document.getElementById('contactModal').style.display = "none";
+			document.body.classList.remove('modal-open'); // Reactivar el scroll y quitar desenfoque
+			document.getElementById('contact-form').reset(); // Reiniciar formulario
+			document.getElementById('success-message').style.display = 'none';
+			document.getElementById('error-message').style.display = 'none';
+		}
+
+		// Cerrar el modal si se hace clic fuera del contenido del modal
+		window.onclick = function (event) {
+			if (event.target == document.getElementById('contactModal')) {
+				document.getElementById('contactModal').style.display = "none";
+				document.body.classList.remove('modal-open'); // Reactivar el scroll y quitar desenfoque
+				document.getElementById('contact-form').reset(); // Reiniciar formulario
+				document.getElementById('success-message').style.display = 'none';
+				document.getElementById('error-message').style.display = 'none';
+			}
+		}
+
+		// Enviar el formulario con EmailJS
+		document.getElementById('contact-form').addEventListener('submit', function (event) {
+			event.preventDefault(); // Previene el comportamiento por defecto del formulario
+
+			var submitButton = document.getElementById('submit-button');
+			submitButton.disabled = true; // Deshabilitar el botón
+			submitButton.textContent = 'Enviando...'; // Cambiar texto del botón
+
+			emailjs.sendForm('service_8a2chnv', 'template_976r5vw', this) // Reemplaza con tu service_id y template_id
+				.then(function (response) {
+					console.log('SUCCESS!', response.status, response.text);
+					document.getElementById('success-message').style.display = 'block'; // Mostrar mensaje de éxito
+					document.getElementById('error-message').style.display = 'none'; // Ocultar mensaje de error
+					document.getElementById('contact-form').reset(); // Reiniciar el formulario
+				}, function (error) {
+					console.log('FAILED...', error);
+					document.getElementById('error-message').style.display = 'block'; // Mostrar mensaje de error
+					document.getElementById('success-message').style.display = 'none'; // Ocultar mensaje de éxito
+				})
+				.finally(function () {
+					submitButton.disabled = false; // Rehabilitar el botón
+					submitButton.textContent = 'Enviar mensaje'; // Restablecer el texto del botón
+				});
+		});
+	</script>
+</body>
 </html>
