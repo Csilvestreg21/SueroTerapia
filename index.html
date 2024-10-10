@@ -468,8 +468,7 @@
 										<div style="text-align: center; margin-bottom: 20px;">
 											<i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 30px;"></i>
 											<h4 style="font-weight: bold;">Reserva en línea</h4>
-											<a href="https://docs.google.com/forms/d/e/1FAIpQLScK1qnY03AKm1zkntoeRlfppVzbuwkVOuhQujwdAUaVTPzdDQ/viewform"
-												class="new-btn-d br-3" target="_blank">
+											<a href="../SueroTerapia/pages/agenda.html" class="new-btn-d br-3">
 												Reserva Aquí
 											</a>
 										</div>
@@ -556,8 +555,9 @@
 						</div>
 						<div id="contactModal" class="modal">
 							<div class="modal-content">
-								<span id="close-modal" class="close">&times;</span>
-								<h2 style="color: #000; text-align: center; font-size: 24px; margin-bottom: 20px;">Contáctenos</h2>
+								<span class="close" id="close-modal">&times;</span>
+								<h2 style="color: #008080; text-align: center; font-size: 24px; margin-bottom: 20px;">
+									Contáctenos</h2>
 								<form id='contact-form'>
 									<input type='hidden' name='form-name' value='contact-form' />
 									<div>
@@ -623,11 +623,11 @@
 	<script src="js/images-loded.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script>
-		(function () {
-			emailjs.init("xcjKxWWSR2vdnhmnX"); // Reemplaza con tu Public Key
-		})();
+		// Inicializa EmailJS una sola vez
+		emailjs.init("xcjKxWWSR2vdnhmnX"); // Reemplaza con tu User ID de EmailJS
 		// Abrir el modal
 		document.getElementById('contactBtn').onclick = function () {
 			document.getElementById('contactModal').style.display = "block";
@@ -678,6 +678,25 @@
 					submitButton.textContent = 'Enviar mensaje'; // Restablecer el texto del botón
 				});
 		});
+		// Función para abrir el modal
+		function openModal() {
+			document.getElementById('contactModal').style.display = 'block';
+			document.body.classList.add('modal-open'); // Agrega la clase al body
+		}
+
+		// Función para cerrar el modal
+		function closeModal() {
+			document.getElementById('contactModal').style.display = 'none';
+			document.body.classList.remove('modal-open'); // Elimina la clase del body
+		}
+
+		// Eventos para abrir y cerrar el modal
+		document.querySelector('.open-modal-button').addEventListener('click', openModal);
+		document.querySelector('.close').addEventListener('click', closeModal);
+
 	</script>
+
+
 </body>
+
 </html>

@@ -1,0 +1,1327 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,900');
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+@import url(animate.css);
+@import url(font-awesome.min.css);
+@import url(magnific-popup.css);
+@import url(responsiveslides.css);
+@import url(owl.carousel.min.css);
+@import url(flaticon.css);
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
+
+body {
+    color: #666666;
+    font-size: 15px;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.80857;
+
+}
+
+
+a {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: 120% !important;
+    color: #1f1f1f;
+    margin: 0
+    
+    
+}
+
+p {
+    font-size: 18px
+}
+
+.title {
+    font-size: 20px
+}
+
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #000000;
+    text-decoration: none !important;
+    opacity: 1
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    opacity: .8
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.form-control::-moz-placeholder {
+    color: #12557f;
+    opacity: 1;
+}
+
+.about-main-info h2{
+	font-size: 40px;
+	font-family: 'Catamaran', sans-serif;
+}
+.about-main-info h2 span{
+	color: #00cb86;
+	text-decoration: underline;
+}
+.about-main-info{
+	margin-bottom: 30px;
+}
+
+.about-m{
+	border: 2px solid #00cb86;
+	box-shadow: 0 10px 25px 0 rgba(0,0,40,.2);
+}
+
+.about-m ul#banner {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.about-m ul#banner li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.about-m ul#banner li img { 
+	visibility: hidden; 
+	width: 100%;
+}
+
+.about-m ul#banner li canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.about-img{
+	padding: 30px 0px;
+}
+
+.about-img img{
+	border-radius: 10px;
+}
+
+.about-m ul{
+	display: block;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.about-m ul li{
+	display: inline-block;
+	text-align: center;
+}
+.about-m ul li a{
+	background: #528780;
+	color: #ffffff;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	display: block;
+	border-radius: 50px;
+	margin: 0px 5px;
+}
+
+.about-m ul li a:hover{
+	background: #333333;
+	color: #ffffff;
+}
+
+.about-main-info h2{
+	font-size: 32px;
+	color: #333333;
+	font-weight: 500;
+}
+
+.about-main-info a{
+	border-radius: 2px;
+	transition: .2s;
+	letter-spacing: 1px;
+	padding: 10px 18px;
+	background: #ffffff;
+	color: #12557f;
+	display: inline-block;
+	line-height: 24px;
+}
+
+.about-main-info a.new-btn-d.br-2{
+	border: 2px solid #12557f;
+}
+
+.about-main-info a.new-btn-d::before{
+	background: rgba(18,85,127,0.2);
+}
+
+.about-main-info a:hover{
+	color: #ffffff;
+}
+.about-box{
+	padding: 70px 0px;
+}
+.title-box{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.title-box h2{
+	font-size: 42px;
+	font-family: 'Catamaran', sans-serif;
+	color: #222222;
+	font-weight: 500;
+	position: relative;
+	padding-bottom: 30px;
+	margin-bottom: 15px;
+}
+
+.title-box h2::after{
+	content: "";
+	position: absolute;
+	background: url(../images/tag-line.png)no-repeat center;
+	width: 120px;
+	height: 20px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.title-box h2 span{
+	color: #00cb86;
+	text-decoration: underline;
+}
+/*------------------------------------------------------------------
+    LOADER 
+-------------------------------------------------------------------*/
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 11000;
+    position: fixed;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.loader {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 258px;
+    height: 229px;
+}
+
+
+
+
+
+#scroll-to-top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    font-size: 34px;
+    border-radius: 2px;
+    transition: .2s;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 40px;
+    background: #57cef8;
+    color: #ffffff;
+    padding: 0;
+}
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+
+.main-top {
+    background: #12557f;
+}
+
+.left-top a {
+    display: inline-block;
+    color: #ffffff;
+    float: left;
+    font-size: 14px;
+}
+
+.new-btn-d {
+    padding: 12px 30px;
+    font-weight: 400;
+    background: none;
+    color: #ffffff;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    border-radius: 0;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+    text-transform: uppercase;
+}
+
+.new-btn-d::before,
+.new-btn-d::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    top: 100%;
+    z-index: -9;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.new-btn-d:hover::before,
+.new-btn-d:hover::after {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.new-btn-d::before {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.new-btn-d::after {
+    background: #00cb86;
+}
+
+.new-btn-d:hover::after {
+    -webkit-transition-delay: 0.175s;
+    transition-delay: 0.175s;
+}
+
+.new-btn-d.br-2 {
+    border: 0px solid #ffffff;
+}
+
+.new-btn-d.br-3 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.new-btn-d.br-4 {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.new-btn-d.br-5 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    /* El botón debe ser bloque o inline-block para centrar con margin */
+    margin: 0 auto;
+    /* Centra horizontalmente */
+    width: fit-content;
+}
+
+.mail-b {
+    float: left;
+}
+
+.mail-b a {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: 0px solid #ffffff;
+}
+
+.mail-b a:hover {
+    color: #00cb86;
+    border: 2px solid #00cb86;
+}
+
+.right-top {
+    float: right;
+}
+
+.right-top ul li {
+    float: left;
+}
+
+.right-top ul li a {
+    font-size: 27px;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0px 20px;
+    border: 0px solid #ffffff;
+}
+
+.right-top ul li a:hover {
+    background: #00cb86;
+    color: #ffffff;
+}
+
+.wel-nots {
+    float: right;
+    margin-left: 20px;
+}
+
+.wel-nots p {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 12px 0px;
+    margin: 0px;
+}
+
+
+.top-header .navbar {
+    padding: 5px 0px;
+}
+
+.top-header {
+    background: #ffffff;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 20;
+}
+
+.top-header .navbar .navbar-collapse ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 15px;
+    position: relative;
+    font-weight: 500;
+}
+
+
+
+.top-header .navbar .navbar-collapse ul li a.active {
+    background: #00cb86;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.top-header .navbar .navbar-collapse ul li a.active::after {
+    width: 20px;
+    height: 20px;
+    content: "";
+    float: left;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url(../images/menu-arrow.png) no-repeat center;
+    border-radius: 10px;
+    transition: ease all 0.3s;
+    transform: translateY(0%) rotate(140deg);
+    -webkit-transform: translateY(0%) rotate(140deg);
+    -o-transform: translateY(0%) rotate(140deg);
+    -ms-transform: translateY(0%) rotate(140deg);
+    -moz-transform: translateY(0%) rotate(140deg);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.top-header .navbar .navbar-collapse ul li a:hover {
+    background: #00cb86;
+    color: #ffffff;
+}
+
+
+.top-header.fixed-menu {
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    background: #fff;
+    z-index: 20;
+}
+
+.navbar-toggler {
+    border: 1px solid #57cef8;
+    border-radius: 0;
+    margin: 16px 15px;
+    padding: 10px 10px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.navbar-toggler span {
+    background: #333333;
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 0px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.navbar-toggler span+span {
+    margin-top: 5px;
+}
+
+.navbar-toggler:hover {
+    border: 1px solid #00cb86;
+}
+
+.navbar-toggler:hover span {
+    background: #00cb86;
+}
+
+
+/*------------------------------------------------------------------
+    Banner
+-------------------------------------------------------------------*/
+
+.home-slider {
+    position: relative;
+    height: 50%;
+}
+
+.lbox-caption {
+    display: table;
+    height: 100% !important;
+    width: 100% !important;
+    left: 0 !important;
+}
+
+.lbox-caption {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.lbox-details {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 22% 0%;
+}
+
+.lbox-details::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.lbox-details h1 {
+    font-size: 54px;
+    font-family: 'Catamaran', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    position: relative;
+    z-index: 3;
+}
+
+.lbox-details h2 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 300;
+    position: relative;
+    z-index: 3;
+}
+
+.lbox-details p {
+    color: #ffffff;
+    position: relative;
+    z-index: 3;
+}
+
+.lbox-details p strong {
+    color: #00cb86;
+    font-size: 40px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.lbox-details a.btn {
+    background: #12557f;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ffffff;
+    border-radius: 0px;
+    border: 2px solid #ffffff;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+
+.lbox-details a.btn:hover {
+    background: #00cb86;
+    color: #ffffff;
+}
+
+/*------------------------------------------------------------------
+    Appointment
+-------------------------------------------------------------------*/
+.appointment-benefits {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 0px solid #16567f;
+    border-radius: 5px;
+}
+
+.appointment-benefits h2 {
+    color: #333;
+}
+
+.appointment-benefits ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.appointment-main {
+    padding: 70px 0px;
+    position: relative;
+}
+
+.well-block {}
+
+.well-block .well-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.well-block form .form-group .control-label {
+    font-size: 16px;
+}
+
+.well-block form .form-group .form-control {
+    min-height: 60px;
+    min-height: 50px;
+    padding: 0px 15px;
+    border-radius: 0;
+    color: #12557f;
+    border: 1px solid #12557f;
+}
+
+.well-block form .form-group .form-control:focus {
+    box-shadow: none;
+}
+
+.well-block form .form-group button {
+    border-radius: 2px;
+    transition: .2s;
+    letter-spacing: 1px;
+    padding: 10px 18px;
+    background: #ffffff;
+    color: #12557f;
+    display: inline-block;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.well-block form .form-group button.new-btn-d.br-2 {
+    border: 2px solid #12557f;
+}
+
+.well-block form .form-group button.new-btn-d::before {
+    background: rgba(18, 85, 127, 0.2);
+}
+
+.feature-block .feature-title {
+    font-size: 20px;
+}
+
+.well-block form .form-group button:hover {
+    color: #ffffff;
+}
+
+
+
+/*------------------------------------------------------------------
+    Contact
+-------------------------------------------------------------------*/
+
+.contact-box {
+    padding: 70px 0px;
+}
+
+.left-contact {
+    margin-top: 60px;
+}
+
+.left-contact h2 {
+    font-size: 38px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.cont-line {
+    overflow: hidden;
+    margin-bottom: 30px;
+    width: 33.33%;
+    float: left;
+}
+
+.icon-b {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    border: 2px dotted #00cb86;
+    margin-right: 10px;
+    color: #333333;
+    border-radius: 50%;
+}
+
+.dit-right h4 {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+
+.dit-right {
+    padding-right: 14px;
+}
+
+.dit-right p {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.dit-right a {
+    font-size: 16px;
+    color: #333333
+}
+
+.dit-right a:hover {
+    color: #00cb86;
+}
+
+.contact-block .form-group .form-control {
+    background: #00cb86;
+    height: 45px;
+    font-size: 16px;
+    border: 0;
+    color: #ffffff;
+    padding: 6px 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.contact-block .form-group textarea.form-control {
+    height: 150px;
+    padding-top: 15px;
+}
+
+.submit-button .btn-common {
+    background-color: #00cb86;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 15px;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    border-radius: 0px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.submit-button .btn-common:hover {
+    background-color: #528780;
+}
+
+.custom-select {
+    height: 45px;
+    font-size: 16px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(45px + 2px);
+}
+
+.help-block ul li {
+    color: red;
+}
+
+.footer-box {
+    background: #292f35;
+    padding: 20px 0;
+}
+
+.footer-box .footer-company-name {
+    text-align: center;
+    margin: 0px;
+    color: #ffffff;
+}
+
+.footer-box .footer-company-name a {
+    color: #00cb86;
+}
+
+.footer-box .footer-company-name a:hover {
+    color: #000000;
+}
+
+/*------------------------------------------------------------------
+    Subscribe
+-------------------------------------------------------------------*/
+
+.subscribe-box {
+    padding: 70px 0px;
+    background: url(../images/footer-bg.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.subscribe-box::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.subscribe-inner {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subscribe-inner h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.subscribe-inner p {
+    color: #cccccc;
+}
+
+.subscribe-inner .form-group .form-control-1 {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 0px;
+    border: none;
+}
+
+.subscribe-inner .form-group button {
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: .2s;
+    letter-spacing: 1px;
+    padding: 10px 18px;
+    background: #ffffff;
+    color: #12557f;
+    display: inline-block;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe-inner .form-group button.new-btn-d.br-2 {
+    border: 2px solid #12557f;
+}
+
+.subscribe-inner .form-group button.new-btn-d::before {
+    background: rgba(18, 85, 127, 0.2);
+}
+
+.subscribe-inner .form-group button:hover {
+    color: #ffffff;
+}
+
+/*------------------------------------------------------------------
+    Modal contactenos
+-------------------------------------------------------------------*/
+/* Fondo del modal */
+#contactModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+    background-color: #cfd5df;
+    /* Fondo azul claro */
+    margin: 15% auto;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 500px;
+    border: 2px solid #93ffff;
+    /* Borde verde */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #000000;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 15px; /* Ajusta la distancia desde la derecha */
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+}
+
+/* Estilo de los campos del formulario */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #008080;
+    /* Borde verde */
+    border-radius: 4px;
+    background-color: #e0f7fa;
+    /* Azul claro */
+}
+
+/* Botón de enviar */
+button[type="submit"] {
+    background-color: #008080;
+    /* Fondo verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40;
+    /* Verde más oscuro al pasar el ratón */
+}
+
+/* Mensajes de éxito y error */
+#success-message {
+    color: #008080;
+    /* Verde */
+    margin-top: 10px;
+}
+
+#error-message {
+    color: #ff0000;
+    /* Rojo para el error */
+    margin-top: 10px;
+}
+.img-column {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna (verticalmente) */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: right; /* Asegura que estén centrados verticalmente si es necesario */
+}
+
+/* Estilos del botón */
+.new-btn-d.br-3 {
+    border-radius: 5px; 
+    text-decoration: none;
+    margin-top: 20px; /* Espacio superior del botón */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30%; /* Ajusta el ancho del botón */
+    text-align: center; /* Asegura que el texto del botón esté centrado */
+}
+
+.new-btn-d.br-3:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el ratón */
+    border: 2px solid #12557f;
+
+}
+/*------------------------------------------------------------------
+    Modal agendamiento
+-------------------------------------------------------------------*/
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    /* Ajusté el padding para reducir la altura */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el ancho del elemento */
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    /* Ajusté el padding para coincidir con los campos */
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#confirmacion-fecha {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------
+    Pop-up
+-------------------------------------------------------------------*/
+/* Estilo general del popup */
+body.modal-open {
+    overflow: hidden; /* Evita el scroll del body cuando el modal está abierto */
+}
+
+#contactModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    background-color: #cfd5df; /* Fondo azul claro */
+    margin: 50px auto; /* Aumenta el espacio superior */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 500px; /* Mantén un ancho máximo */
+    border: 2px solid #93ffff; /* Borde verde */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    color: #333; /* Color del texto */
+    overflow-y: auto; /* Permitir scroll solo en el contenido del modal */
+}
+
+
+
+/* Estilo del título dentro del modal */
+.modal-content h1 {
+    color: #008080; /* Verde azulado */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de cerrar (X) */
+.close {
+    color: #000; 
+    font-size: 28px; 
+    position: absolute; /* Para poder posicionarlo */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 15px; /* Ajusta la distancia desde la derecha */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000; /* Color rojo al pasar el mouse */
+}
+
+/* Estilo de los campos del formulario */
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #008080; /* Borde verde azulado */
+    border-radius: 4px;
+    background-color: #e0f7fa; /* Azul claro */
+    font-size: 14px; /* Ajuste del tamaño de la fuente */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+/* Botón de enviar */
+button[type="submit"] {
+    background-color: #008080; /* Fondo verde azulado */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Ajuste del tamaño de la fuente */
+    width: 100%; /* Asegura que el botón ocupa todo el ancho */
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Mensajes de éxito y error */
+#success-message {
+    color: #008080; /* Verde */
+    margin-top: 10px;
+}
+
+#error-message {
+    color: #ff0000; /* Rojo para el error */
+    margin-top: 10px;
+}
+/*------------------------------------------------------------------
+    suero-terapia
+-------------------------------------------------------------------*/
+
+.suero-terapia-section {
+    background-color: #f2f2f2; /* Gris claro */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombras sutiles para profundidad */
+}
+
+/* Estilo del título */
+.suero-terapia-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Color de texto más oscuro */
+    margin-bottom: 15px;
+}
+
+/* Texto llamativo */
+.highlight-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0d0d0d; /* Azul brillante para destacar */
+}
+
+/* Ajustes del texto debajo del título */
+.suero-terapia-section p,
+.appointment-benefits ul {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Lista de beneficios */
+.appointment-benefits ul {
+    margin-top: 15px;
+}
+
+.appointment-benefits ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Estilo para el botón de CTA */
+button {
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Oscurecer el color del botón en hover */
+}
