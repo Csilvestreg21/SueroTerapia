@@ -1304,7 +1304,22 @@ button:focus{
 	margin-top: 20px;
 }
 
+.contenedor {
+	position: relative;
+	display: inline-block;
+}
 
+.imagen {
+	display: block;
+}
+
+.marca-agua {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70px; /* Ajusta el tamaño de la marca de agua */
+	opacity: 0.3; /* Ajusta la transparencia de la imagen de la marca de agua */
+}
 /*------------------------------------------------------------------
     Contact
 -------------------------------------------------------------------*/
